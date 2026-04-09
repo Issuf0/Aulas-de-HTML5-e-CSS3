@@ -1,0 +1,27 @@
+  body {
+            background-color: #ccc;
+            color: #555;
+        }
+
+        div {
+            background-color: #fff;
+            width: 300px;
+            margin-left: 550px;
+            margin-top: 250px;
+            text-align: center;
+            border-style: groove;
+        }
+
+        input {
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+
+        button {
+            margin-top: 10px;
+            background-color: #484D56;
+            color: #fff;
+            border: #484D56;
+            height: 30px;
+            cursor: pointer;
+        }
