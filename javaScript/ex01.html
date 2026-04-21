@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Números aleatórios</title>
+</head>
+<body>
+    <button onclick="gerarNumero()">Gerar números</button>
+    <div id="numero">Preparando...</div>
+
+    <script>
+        function gerarNumero() {
+            let numeros = Math.floor(Math.random() * 51);
+            let nr = document.getElementById('numero');
+
+            nr.textContent = numeros;
+            
+        }
+    </script>
+</body>
+</html>

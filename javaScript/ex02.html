@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário com média</title>
+</head>
+<body>
+    <h1>Formulário com média</h1>
+
+    <form onsubmit="calcularMedia(event)">
+        <input type="number" id="n1">
+        <input type="number" id="n2">
+        <input type="number" id="n3">
+        <button type="submit">Calcular</button>
+    </form>
+
+    <p id="res">Aqui vai aparecer o resultado...</p>
+
+    <script>
+        function calcularMedia(e) {
+            e.preventDefault();
+            let nota1 = Number(document.getElementById('n1').value);
+
+            let nota2 = Number(document.getElementById('n2').value);
+
+            let nota3 = Number(document.getElementById('n3').value);
+
+            let resposta = document.getElementById('res');
+
+            let media = (nota1 + nota2 + nota3) / 3;
+
+            if (media < 10) {
+                resposta.textContent = "Insuficiente";
+            } else if (media < 14) {
+                resposta.textContent = "Bom!";
+            } else {
+                resposta.textContent = "Muito Bom!";
+            }
+
+        }
+    </script>
+</body>
